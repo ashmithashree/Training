@@ -23,11 +23,11 @@ public class ParametrizedTest {
 		int sum= data[2];
 		assertEquals(sum,obj.sum(a, b));
 	}
-	@ParameterizedTest
-	@EnumSource(value=TimeUnit.class,names= {"NANOSECOND","MICROSECONDS"})
-	void withSomeEnumValue(TimeUnit unit) {
-		assertNotNull(unit);
-	}
+	//@ParameterizedTest
+//	@EnumSource(value=TimeUnit.class,names= {"NANOSECOND","MICROSECONDS"})
+//	void withSomeEnumValue(TimeUnit unit) {
+//		assertNotNull(unit);
+//	}
 	@DisplayName("Sum Method Test")
 	@ParameterizedTest
 	@CsvSource({"1,2,3","6,7,13","9,5,14"})

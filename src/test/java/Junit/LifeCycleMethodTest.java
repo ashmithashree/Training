@@ -43,11 +43,11 @@ class LifeCycleMethodTest {
 	void testSumNegative() {
 		assertNotEquals(7,obj.sum(2, 3));
 	}
-	@Test
-	void testError() {
-		Exception exception=assertThrows(IllegalArgumentException.class,()->obj.sum(12, 3));
-		assertEquals("Value should be leass than 10",exception.getMessage());
-	}
+//	@Test
+//	void testError() {
+//		Exception exception=assertThrows(IllegalArgumentException.class,()->obj.sum(12, 3));
+//		assertEquals("Value should be leass than 10",exception.getMessage());
+//	}
 	
 
 }
